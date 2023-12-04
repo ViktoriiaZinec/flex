@@ -1,0 +1,339 @@
+body {
+  background: rgb(7, 18, 53);
+  background-image: radial-gradient(
+      circle 500px at 80% 20%,
+      rgb(8, 40, 53, 1) 0px,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle 750px at 80% 80%,
+      rgb(58, 31, 50, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 750px at 20% 20%,
+      rgba(199, 9, 232, 0.4) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 360px at 12% 78%,
+      rgb(19, 26, 75) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 260px at 52% 18%,
+      rgb(11, 33, 83, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 14px at 10% 8%,
+      rgb(69, 58, 43, 1) 12px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 14px at 66% 78%,
+      rgb(69, 58, 43, 1) 12px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 14px at 95% 33%,
+      rgb(10, 67, 60, 1) 12px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 12px at 72% 28%,
+      rgb(79, 36, 68, 1) 12px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 8px at 88% 11%,
+      rgb(16, 43, 102, 1) 6px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 12px at 13% 46%,
+      rgb(27, 34, 52) 12px,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 20px at 13% 46%,
+      rgb(17, 49, 117, 1) 18px,
+      transparent 100%
+    );
+
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  padding: 20px;
+}
+.nav-list li a {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-list li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(243, 196, 242);
+  transition: width 0.5s ease-in-out;
+}
+.nav-list li a:hover {
+  color: rgb(243, 196, 242);
+}
+.nav-list li a:hover::before {
+  width: 100%;
+}
+.header {
+  margin: 100px auto auto 100px;
+}
+.container {
+  margin: 0 60px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  border: 2px dashed rgb(225, 0, 255);
+  padding: 20px;
+  min-width: 500px;
+}
+button {
+  cursor: pointer;
+}
+.button {
+  width: 150px;
+  min-width: 120px;
+  height: 66px;
+  padding: 5px;
+
+  border-radius: 100px;
+
+  background: rgba(199, 9, 232, 0.987);
+  background: linear-gradient(
+    -75deg,
+    rgba(199, 9, 232, 0.987),
+    rgb(21, 20, 22)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: 0.2s ease-in-out;
+
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.button:hover {
+  background: rgba(199, 9, 232, 0.987);
+  background: linear-gradient(
+    -180deg,
+    rgba(199, 9, 232, 0.987),
+    rgb(21, 20, 22)
+  );
+  scale: 0.99;
+  box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 500px;
+  justify-content: center;
+
+  gap: 30px;
+}
+.flex {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    -75deg,
+    rgba(218, 148, 232, 0.987),
+    rgb(21, 20, 22)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: 0.2s ease-in-out;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.flex:hover {
+  background: rgba(218, 148, 232, 0.987);
+  background: linear-gradient(
+    -180deg,
+    rgba(218, 148, 232, 0.987),
+    rgb(21, 20, 22)
+  );
+  scale: 0.99;
+  box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.5);
+}
+.btn-go-back {
+  margin: 30px auto auto 100px;
+}
+.go-back {
+  color: #fff;
+  font-size: 22px;
+}
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  border: 2px dashed rgb(225, 0, 255);
+  padding: 20px;
+  min-width: 500px;
+  flex-wrap: wrap;
+  margin: 0 60px;
+}
+.one {
+  background-color: aqua;
+  padding: 15px;
+}
+.two {
+  background-color: blueviolet;
+  padding: 100px 20px;
+}
+.three {
+  background-color: rgb(58, 226, 43);
+  padding: 55px 20px;
+}
+.four {
+  background-color: yellow;
+  padding: 77px;
+}
+.five {
+  background-color: red;
+  padding: 22px;
+}
+.six {
+  background-color: rgb(255, 0, 204);
+  padding: 60px 33px;
+}
+main {
+  margin-top: 100px;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.row-wrapper.column .one {
+  width: 20%;
+}
+
+.row-wrapper.column .two {
+  width: 50%;
+  padding: 20px;
+}
+
+.row-wrapper.column .three {
+  width: 33.33%;
+}
+
+.row-wrapper.column .four {
+  width: 25%;
+  padding: 13px;
+}
+
+.row-wrapper.column .five {
+  width: 50%;
+}
+
+.row-wrapper.column .six {
+  width: 66.66%;
+  padding: 25px;
+}
+.wrapper-layout {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper-layout > * {
+  padding: 30px;
+  flex: 1 100%;
+}
+
+.header-section {
+  background: rgb(244, 157, 142);
+}
+
+.footer {
+  background: rgb(125, 210, 125);
+}
+
+.main {
+  text-align: left;
+  background: rgb(70, 174, 209);
+}
+
+.aside-1 {
+  background: rgb(238, 218, 104);
+}
+
+.aside-2 {
+  background: rgb(242, 98, 170);
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+.layout-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#layout-main {
+  padding: 0;
+}
