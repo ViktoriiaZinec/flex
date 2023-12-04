@@ -179,16 +179,18 @@ button {
   font-size: 18px;
   font-weight: bolder;
 }
-.flex:hover {
+.flex:hover,
+button.active {
   background: rgba(218, 148, 232, 0.987);
   background: linear-gradient(
     -180deg,
-    rgba(218, 148, 232, 0.987),
+    rgba(199, 9, 232, 0.987),
     rgb(21, 20, 22)
   );
   scale: 0.99;
   box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.5);
 }
+
 .btn-go-back {
   margin: 30px auto auto 100px;
 }

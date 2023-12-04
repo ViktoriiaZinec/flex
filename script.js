@@ -2,13 +2,25 @@
 function changeJustifyContent(value) {
   const container = document.querySelector(".container");
   container.style.justifyContent = value;
-  console.log("container", container);
-  console.log("container.style.justifyContent", container.style.justifyContent);
+  const buttons = document.querySelectorAll(".nav .flex");
+
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  event.target.classList.add("active");
 }
 
 function changeAlignItemsContent(value) {
   const container = document.querySelector(".row-wrapper");
   container.style.alignItems = value;
+  const buttons = document.querySelectorAll(".nav .flex");
+
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  event.target.classList.add("active");
 }
 
 function changeOrder(value) {
@@ -19,4 +31,11 @@ function changeOrder(value) {
   } else {
     container.classList.remove("column");
   }
+  const buttons = document.querySelectorAll(".nav .flex");
+
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  event.target.classList.add("active");
 }
